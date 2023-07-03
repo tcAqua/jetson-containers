@@ -164,6 +164,6 @@ print_var "V4L2_DEVICES"
 print_var "DISPLAY_DEVICE"
 
 # run the container
-sudo docker run --runtime nvidia -it --rm --network host \
+sudo docker run --runtime nvidia -it --network host \
 	$ENVIRONMENT $DISPLAY_DEVICE $V4L2_DEVICES \
 	$USER_VOLUME $CONTAINER_IMAGE $USER_COMMAND
